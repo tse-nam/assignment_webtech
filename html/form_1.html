@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM_1</title>
+    <style>
+        .rec{
+            height: 740px;
+            width: 440px;
+            background-color: white;
+            margin-left: 500px;
+            margin-top: 20px;
+        }
+        form{
+            padding: 43px;
+        }
+
+         body{
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 13px;
+            font-weight: 11px;
+            background-color: #555;
+            margin: 0%;
+        }
+        fieldset{
+            width: fit-content;
+            background-color: #8ed523;
+            border-radius: 4px;
+        }
+        .insidetd{
+            border: 2px solid white;
+            width: 300px;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #9af351d0;
+        }
+        .col1{
+            width: 40%;
+        }
+        h4{
+            margin-bottom: 5px;
+            color: #111111;
+        }
+        button:hover {
+	        background: black;
+        }
+        
+        .button{
+            margin-left: 100px;
+            margin-top: 10px;
+            border: none;
+            color: white;
+            background-color: #000000a9;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        #addtext{
+            vertical-align: top;
+            text-align: left;
+        }
+        #radiocell{
+            padding-bottom: 10px;
+        }
+        input::placeholder{
+            color: grey;
+            font-size: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="rec">
+
+    <form>
+    
+    <fieldset>
+        <h4> Step 1: Your details</h4>
+        <table class="outer">
+            <tr> 
+                <td class="insidetd">
+                <table>
+                    <tr><td class="col1"><label for="name">Name</label></td>
+                        <td><input class="one" type="text" placeholder="First and last name" id="name"></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+
+    
+            <tr> <td class="insidetd">
+                <table >
+                    <tr><td class="col1"> <label class="one" for="email">Email</label></td>
+                        <td> <input class="one" type="mail" id="email" placeholder="example@domain.com"></td>
+                    </tr>
+                </table>
+            </td></tr>
+
+       
+            <tr> <td class="insidetd">
+                <table>
+                    <tr><td class="col1"> <label for="moblie">Phone</label></td>
+                        <td><input class="one"  type="text" id="mobile" placeholder="Eg. +447500000000"></td>
+                    </tr>
+                </table>
+            </td></tr>
+        </table>
+        <h4>step 2: Delivery address</h4>
+        <table class="outer">
+            <tr> 
+                <td class="insidetd">
+                <table>
+                    <tr><td id="addtext" class="col1"> <label for="add">Address</label></td>
+                        <td> <textarea id="add" name="add" cols="16" rows="4"></textarea> </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+
+    
+            <tr> <td class="insidetd">
+                <table class="inside">
+                    <tr><td class="col1"> <label for="code">Post Code</label></td>
+                        <td> <input type="mail" id="code"></td>
+                    </tr>
+                </table>
+            </td></tr>
+
+       
+            <tr> <td class="insidetd">
+                <table class="inside">
+                    <tr><td class="col1"> <label for="cty">country</label></td>
+                        <td> <input type="text" id="cty"></td>
+                    </tr>
+                </table>
+            </td></tr>
+        </table>
+
+        <h4>step 3: Card Details</h4>
+        <table class="outer">
+            <tr> <td id="radiocell" class="insidetd">
+                    <table class="inside">
+                        <tr>
+                             <td>
+                                <div style="padding-bottom: 4px;"><label for="card">Card type</label><br></div>
+                                <input class="ct" type="radio" name="card">
+                                <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" width="20px" height="10px"> VISA
+                                <input class="ct" type="radio" name="card">
+                                <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/wp-cms/uploads/2018/04/4-you-might-not-notice-amex-new-brand.jpg" width="20px" height="10px" >AmEx
+                                <input class="ct" type="radio" name="card"> 
+                                <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" width="20px" height="10px">Mastercard
+                                </td></tr>
+                    </table></td></tr>
+
+            <tr> 
+                <td class="insidetd">
+                <table class="inside">
+                    <tr><td class="col1"><label for="add">Card number</label></td>
+                        <td> <input type="number"> </td>
+                    </tr>
+                </table>
+            </td></tr>
+
+    
+            <tr> <td class="insidetd">
+                <table class="inside">
+                    <tr><td class="col1"><label for="cod">Security code</label></td>
+                        <td> <input type="number" id="cod"></td>
+                    </tr>
+                </table>
+            </td></tr>
+
+       
+            <tr> <td class="insidetd">
+                <table class="inside">
+                    <tr><td class="col1"><label for="ncard">Name on card</label></td>
+                        <td><input class="one" type="text" id="ncard" placeholder="Exact name as the card"></td>
+                    </tr>
+                </table>
+            </td></tr>
+        </table>
+        <div class="sm">
+            <button class="button">BUY IT!</button>
+            </div>
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>

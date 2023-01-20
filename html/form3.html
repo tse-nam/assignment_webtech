@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM_3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;         
+        }
+        body{
+            background-color: #d8deae;
+
+        }
+        li{
+            float: left;
+            background-color: #b7ca78;
+            width: 650px;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 6px;
+            text-indent: 5px;
+            font-family: sans-serif;
+            
+        }
+        .nav{
+            margin-left: 60px;
+        }
+        .table1{
+           padding: 5px;
+        }
+        input:not(.input2,.input3){
+            width: 350px;
+            margin-left: 10px;
+            height: 25px;
+        }
+        .table2 tr,td{
+            padding-bottom: 20px;
+        }
+
+        .table1{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-left: 50px;     
+        }
+        .input2{
+            width: 250px;
+            height: 25px;
+        }
+        h4{
+            font-size: large;
+            font-weight: normal;
+        }
+        .two{
+            padding-bottom: 60px;
+        }
+        button{
+            font-size: 15px;
+            background-color: #b7ca78;
+            padding: 4px;
+            width: 80px;
+            border-radius: 4px;        
+        }
+   
+        table{
+            border-collapse: collapse;
+        }
+        img{
+         margin-left: 100px;
+        }
+        .two{
+            margin-left: 110px;           
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul type="none">
+            <li>
+                <h1>Registration</h1>
+            </li>
+            <li>
+                <h1>Login</h1> 
+            </li>
+        </ul>
+    </div>
+
+    <table class="table1">
+        <tr>
+            <td>
+    <div class="one">
+    <form>
+        <table class="table2">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name">*</td>
+            </tr>
+            <tr>
+                <td><label for="uname">Username:</label></td>
+                <td><input type="text" id="uname">*</td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email">*</td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Password:</label></td>
+                <td><input type="password" id="pwd">*</td>
+            </tr>
+            <tr>
+                <td><label for="vpwd"> Verify Password:</label></td>
+                <td><input type="password" id="vpwd">*</td>
+            </tr>
+        </table>
+        <h4 style="padding-top: 10px;">Fields marked with a asterisk(*) are required</h4>
+        <div class="bn" style="padding-top: 10px ;">
+            <button>register</button>
+        </div>
+    </form>
+    </div></td>
+
+    <td><h3 style="margin-left: 50px;">or</h3></td>
+    <td>
+
+    <div class="two">
+        <br><br><br>
+        <h4 style="padding-bottom: 10px;">to access the private area of this <br> site,please log in</h4>
+        <form>
+            <table>
+                <tr><td>
+         <div class="c">
+            <div style="padding-bottom: 20px ;">
+                <label for="user">Username</label><br>
+                <input class="input2"type="text" id="user">
+            </div>
+            <div>
+                <label for="pwds">Password</label><br>
+                <input class="input2"type="password" id="pwds"> 
+            </div>
+            <div style="padding-top: 10px;">
+                <label for="re">Remember me</label>
+                <input class="input3"type="checkbox">
+            </div>
+        </div></td>
+        <td>
+            <div class="c">
+                <img src="https://media.istockphoto.com/id/961187958/photo/two-keys-and-trinket-house-on-white-background-isolated-3d-illustration.
+                            jpg?s=612x612&w=0&k=20&c=m5nLy8wU3doapDeeyU5WX0pq-MJLR22fhSYws4suO8c=" width="280px">
+            </div>
+            <div style="padding-top: 20px;">
+            <a href=""><h4 style="margin-left: 200px;">forget your Password</h4></a>
+            <a href=""><h4 style="margin-left: 200px;">forget your Username</h4></a>
+            </div></td>
+        </tr>
+        </table>
+            <div class="bn">
+                <button>login</button>
+
+            </div>
+        </form>
+
+    </div>
+    </td>
+    </tr>
+   
+    </table>
+    
+</body>
+</html>
